@@ -1,0 +1,84 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 02 Okt 2024 pada 10.12
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `atletindo`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `atletindo`
+--
+
+CREATE TABLE `atletindo` (
+  `nama_atlet` varchar(50) DEFAULT NULL,
+  `Cabang_olahraga` varchar(50) DEFAULT NULL,
+  `Juara_1` int(11) DEFAULT NULL,
+  `Juara_2` int(11) DEFAULT NULL,
+  `Juara_3` int(11) DEFAULT NULL,
+  `Tinggi_badan` int(11) DEFAULT NULL,
+  `Berat_badan` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `atletindo`
+--
+
+INSERT INTO `atletindo` (`nama_atlet`, `Cabang_olahraga`, `Juara_1`, `Juara_2`, `Juara_3`, `Tinggi_badan`, `Berat_badan`) VALUES
+('Jonatan Christie', 'Bulutangkis', 7, 4, 3, 179, 75),
+('Anthony Ginting', 'Bulutangkis', 10, 5, 6, 171, 66),
+('Greysia Polii', 'Bulutangkis', 8, 3, 4, 162, 58),
+('Apriyani Rahayu', 'Bulutangkis', 6, 3, 2, 163, 63),
+('Liliyana Natsir', 'Bulutangkis', 9, 5, 2, 168, 60),
+('Tontowi Ahmad', 'Bulutangkis', 11, 4, 3, 178, 70),
+('Kevin Sanjaya', 'Bulutangkis', 14, 6, 4, 170, 55),
+('Marcus Gideon', 'Bulutangkis', 15, 7, 5, 168, 65),
+('Eko Yuli Irawan', 'Angkat Besi', 12, 6, 4, 158, 60),
+('Windy Cantika Aisah', 'Angkat Besi', 5, 2, 1, 158, 54),
+('Lalu Muhammad Zohri', 'Atletik (Lari)', 4, 2, 1, 170, 60),
+('Maria Natalia Londa', 'Atletik (Lompat Jauh)', 8, 3, 2, 160, 57),
+('Ahsan Hendra', 'Bulutangkis', 13, 5, 3, 175, 70),
+('Rizki Juniansyah', 'Angkat Besi', 7, 3, 1, 165, 62),
+('Taufik Hidayat', 'Bulutangkis', 10, 5, 2, 176, 65),
+('Aries Susanti Rahayu', 'Panjat Tebing', 8, 2, 1, 161, 50),
+('Sapwaturrahman', 'Atletik (Lompat Jauh)', 6, 3, 2, 170, 63),
+('I Gede Siman Sudartawa', 'Renang', 9, 3, 2, 175, 68),
+('Triyaningsih', 'Atletik (Lari)', 5, 4, 3, 150, 45),
+('Aldila Sutjiadi', 'Tenis', 6, 2, 1, 168, 58),
+('Christopher Rungkat', 'Tenis', 8, 3, 2, 173, 65),
+('I Ketut Ariana', 'Angkat Besi', 7, 3, 1, 160, 61),
+('Hanifan Yudani Kusumah', 'Pencak Silat', 6, 2, 1, 172, 70),
+('Puspa Arum Sari', 'Pencak Silat', 5, 3, 1, 165, 55),
+('Eko Roni Saputra', 'MMA', 9, 3, 2, 165, 61),
+('Yolla Yuliana', 'Bola Voli', 4, 2, 3, 178, 68),
+('Amalia Fajrina Arie', 'Panahan', 5, 2, 2, 165, 60),
+('Diananda Choirunisa', 'Panahan', 7, 3, 1, 160, 55),
+('Mochammad Bayu Seno', 'Karate', 6, 2, 3, 170, 65),
+('Fajar Alfian', 'Bulutangkis', 8, 4, 3, 178, 68),
+('Rian Ardianto', 'Bulutangkis', 7, 5, 3, 175, 70),
+('Angga Pratama', 'Bulutangkis', 6, 3, 2, 178, 68),
+('Praveen Jordan', 'Bulutangkis', 9, 4, 2, 183, 85),
+('Melati Daeva Oktavianti', 'Bulutangkis', 5, 3, 2, 168, 65),
+('Syahrul Sazali', 'Taekwondo', 4, 2, 1, 170, 62);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
